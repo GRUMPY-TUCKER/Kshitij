@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Successful</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="display-container">
+    <h1>Submission Successful!</h1>
+    <div class="submitted-data">
+      <img id="submittedImage" alt="Uploaded Image" />
+      <p id="submittedText"></p>
+    </div>
+    <button onclick="goBack()" class="go-back-btn">Go Back</button>
+  </div>
+  <script>
+    function goBack() {
+      window.location.href = "upload.html";
+    }
+  </script>
+</body>
+
+</html>

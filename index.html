@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="grievance-container">
+    <h1>Upload Your Grievance</h1>
+    <form id="grievanceForm" action="submitGrievance.html" method="POST" onsubmit="return handleSubmit(event)">
+      <label for="grievanceUpload" class="form-label">Upload Supporting Document (optional):</label>
+      <input type="file" id="grievanceUpload" accept=".pdf,.doc,.docx,.txt" class="form-input">
+
+      <label for="grievanceText" class="form-label">Enter Your Grievance:</label>
+      <textarea id="grievanceText" placeholder="Describe your grievance..." class="form-input" required></textarea>
+
+      <label for="locationText" class="form-label">Location of Feedback:</label>
+      <textarea id="locationText" placeholder="Enter The Location" class="form-input" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit Grievance</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
